@@ -1,0 +1,10 @@
+body {
+    font-family:'Poppins',sans-serif;
+}
+
+.about-us {
+    padding: 25px 50px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 24px;
+}

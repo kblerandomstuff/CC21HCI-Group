@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>
+            Cotton Shirt Regular Fit - Nature
+        </title>
+        <link rel="stylesheet" href="detail.css">
+        <link rel="stylesheet" href="navbar+footer.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li class="product">
+                    <a href="Womenproductlist.html">Product</a>
+                </li>
+                <li class="about">
+                    <a href="abtus.html">About Us</a>
+                </li>
+                <li class="companyname">
+                    <a href="homepage.html"><img src="img/Nature (1).png"></a>
+                </li>
+                <li class="ig"><img src="img/IG.svg"></li>
+                <li class="fb"><img src="img/FB.svg"></li>
+                <li class="account">
+                    <a href="login.html"><img src="img/Account.svg"></a>
+                </li>
+                <li class="cart">
+                    <a href="#"><img src="img/Cart.svg"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="backbutton">
+            <a href="#"><img src="img/Arrow.png" width="25" height="25"></a>
+        </div>
+        <div class="pslogan">
+            <img src="img/pslogan.png">
+        </div>
+        <div class="pdetail">
+            <div class="ppic">
+                <div class="ssc">
+                    <div class="mySlides fade">
+                        <img src="/img/product1.png" style="width:50%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/product2.png" style="width:50%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/img/product3.png" style="width:50%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="pdesc">
+                <div class="ptitle">
+                    <h4>Cotton Shirt Regular Fit
+                        <br>HKD 99
+                    </h4>
+                </div>
+                <div class="pcolour">
+                    <h6>Colour: </h6>
+                    <select name="pcolour" id="pcolour">
+                        <option value="White">White</option>
+                        <option value="Yellow">Yellow</option>
+                    </select>
+                </div>
+                <div class="psize">
+                    <h6>Size: </h6>
+                    <select name="psize" id="psize">
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div class="pquantity">
+                    <h6>Quantity: </h6>
+                    <input type="number" id="quantity" name="quantity" min="1">
+                </div>
+                <div class="pbuttons">
+                    <div class="pcartbutton">
+                        <a href="#"><img src="img/add2cart.png"></a>
+                    </div>
+                    <div class="ppurchasebutton">
+                        <a href="#"><img src="img/purchasenow.png"></a>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-container">
+                    <div class="footer-nav">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li>
+                                <a hef="#"><b>History</b></a>
+                            </li>
+                            <li>
+                                <a hef="#"><b>Aims</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h3>Product</h3>
+                        <ul>
+                            <li>
+                                <a href="Womenproductlist.html"><b>Women</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>Men</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>Kids</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h3>Get Social</h3>
+                        <div class="footer-social">
+                            <a href="#"><img src="img/IG.svg"></a>
+                            <a href="#"><img src="img/FB.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright. &copy; 2021</p>
+            </div>
+        </footer>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>

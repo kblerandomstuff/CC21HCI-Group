@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.type{
+    display: flex;
+    font-family: 'Oswald',sans-serif;
+}
+.type .women{
+    color: #70353A;
+    font-size: 24px;
+    padding-right:60px;
+    padding-left: 30px;
+
+}
+.type .men{
+    color: #567D95;
+    font-size: 48px;
+    padding-top: 25px;
+    padding-right: 60px;
+
+}
+.type .kids{
+    color: #CF673D;
+    font-size: 24px;
+    padding-top: 25px;
+}
+
+.lang .men_zh {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.sorting{
+    display: flex;
+    color: #BCA48F;
+    font-family: 'Oswald',sans-serif;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    margin-top: 38px;
+    font-size: 24px;
+}
+.sorting img{
+    padding-left:10px ;
+    padding-top: 5px;
+}
+
+.sortby{
+    display: flex;
+    padding-right: 61px;
+}
+.size{
+    display:flex;
+    padding-right: 61px;
+}
+.color{
+    display: flex;
+
+}
+
+.product-conatiner{
+ display: flex;
+ margin-left: 30px;
+ flex-wrap: wrap;
+}
+
+.productionlist{
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.productionlist img {
+  width: 394px;
+  height:590px;
+}
+
+.productFS1-color{
+    height: 15px;
+    width: 15px;
+    background-color: #FDDB27;
+    border-radius: 50%;
+    display: inline-block;
+}
+.productFS2-color{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border:black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.productPD-color{
+    height: 15px;
+    width: 15px;
+    background-color:#ADEFD1;
+    border-radius: 50%;
+    display: inline-block;
+}
+.productPS-color{
+    height: 15px;
+    width: 15px;
+    background-color: #FDDB27;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.productDB-color{
+    height: 15px;
+    width: 15px;
+    background-color: #000621;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.productLP-color{
+    height: 15px;
+    width: 15px;
+    background-color: #ffbadd;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.productG-color{
+    height: 15px;
+    width: 15px;
+    background-color: #b8ffc5;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.productLightGrey-color{
+    height: 15px;
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.productBlue-color{
+    height: 15px;
+    width: 15px;
+    background-color: #515e93;
+    border-radius: 50%;
+    display: inline-block;
+}

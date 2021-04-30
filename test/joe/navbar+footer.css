@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+   
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+.product,.about{
+    padding-top: 96px;
+    padding-right:16px;
+    padding-left:16px;
+}
+.ig,.fb,.account,.cart{
+    padding-top:75px;
+}
+.ig,.fb,.account{
+    padding-right:36px;
+}
+.product{
+    margin-left: 20px;
+}
+
+.navbar li:th-child(3){
+    padding-top: 0px;
+}
+.companyname{
+    padding-left: 178px;
+    padding-right:138px;
+}
+
+footer{
+    background: #8D9F93;
+    font-family: 'Oswald',sans-serif;
+    color: #24342D;
+    margin-top:147px ;
+    padding-bottom: 30px;
+    
+}
+footer a{
+    color: #24342D;
+    text-decoration: none;
+}
+
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+    padding:50px 142px 12px 118px;
+    font-size: 24px;
+}
+
+.footer-container ul{
+    margin-top: 35px;
+    padding: 0;
+    list-style: none;
+}
+.footer-container ul li{
+    margin: 35px 0;
+    font-size: 24px;
+}
+.footer-container .footer-social{
+    margin: 35px 0 24px 0;
+}
+.footer-container .footer-social a{
+    text-decoration: none;
+    margin-left:36px;
+}
+.footer-container .footer-social a:first-child{
+    margin-left: 0;
+}
+
+.footer-container .footer-social a img{
+    transition:500ms;
+}
+
+.footer-container .footer-social a img:hover{
+    transform: scale(1.2);
+}
+.copyright{
+    text-align:center;
+}
