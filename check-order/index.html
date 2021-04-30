@@ -8,13 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Natural - your no.1 clothing outlet</title>
+    <title>Check order - Natural</title>
 
 
     <!-- Custom styles for this template -->
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40754e4154.js" crossorigin="anonymous"></script>
+    <script src="../js/corder.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -63,23 +64,18 @@
         <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
             <ul class="ml-auto nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">cart</a>
+                    <a class="nav-link" href="../cart">Cart</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Service</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Support</a>
-                        <a class="dropdown-item" href="#">Check order</a>
-                        <a class="dropdown-item" href="#">Report</a>
+                        <a class="dropdown-item" href="../check-order">Check order</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">US</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">About</a>
-                        <a class="dropdown-item" href="#">Aim</a>
-                        <a class="dropdown-item" href="#">History</a>
-                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">About us</a>
                         <a class="dropdown-item" href="#"><i class="fab fa-facebook"></i></a>
                         <a class="dropdown-item" href="#"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -106,14 +102,14 @@
         <form>
             <div class="row">
                 <div class="col-md-12">
-                    <label for="onumber" class="form-label">Order number:</label>
-                    <input type="email" class="form-control" id="onumber" aria-describedby="emailHelp">
+                    <label for="se" class="form-label">Order number:</label>
+                    <input type="email" class="form-control" id="se" aria-describedby="emailHelp" required/>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <label for="cnumber" class="form-label">Contact number:</label>
-                    <input type="email" class="form-control" id="cnumber" aria-describedby="emailHelp">
+                    <label for="sp" class="form-label">Contact number:</label>
+                    <input type="password" class="form-control" id="sp" aria-describedby="emailHelp" required/>
                 </div>
             </div>
             <div class="container">
@@ -121,7 +117,7 @@
                     <div class="buttons">
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                <button type="button" class="btn btn-primary">Check</button>
+                                <input type="submit" onclick="login()" class="btn btn-primary" value="Check"></input>
                             </div>
                         </div>
                     </div>
@@ -136,9 +132,7 @@
     <div class="container">
         <div class="row">
             <div class="order-1 col-md-4">
-                <a href="#"><p>About us</p></a>
-                <a href="#"><p>Our aim</p></a>
-                <a href="#"><p>Brand history</p></a>
+                <a href="../about"><p>About us</p></a>
             </div>
             <div class="order-2 col-md-4">
                 <a href="#"><p>Product</p></a>

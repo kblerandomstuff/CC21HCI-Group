@@ -1,206 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Natural - your no.1 clothing outlet</title>
-
-
     <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/productcolor.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40754e4154.js" crossorigin="anonymous"></script>
     <script
             src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous"></script>
-
 </head>
-
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Nature</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Male</a>
-                        <a class="dropdown-item" href="#">Female</a>
-                        <a class="dropdown-item" href="#">Children</a>
-                    </div>
+<wrapper class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse nav-content order-2">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Male</a>
+                            <a class="dropdown-item" href="#">Female</a>
+                            <a class="dropdown-item" href="#">Children</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
+                <li class="nav-item"><a class="navbar-brand" href="#">Nature</a></li>
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+            <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
+                <ul class="ml-auto nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">cart</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Service</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Support</a>
+                            <a class="dropdown-item" href="#">Check order</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">US</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Aim</a>
+                            <a class="dropdown-item" href="#">History</a>
+                            <a class="dropdown-item" href="#">Contact</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-facebook"></i></a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <main class="container-fluid py-3 flex-fill">
+    <section class="py-10">
+        <div class="container">
+            <br><br><br><br>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#f">Women</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">cart</a>
+                    <a class="nav-link" data-toggle="tab" href="#m">Men</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Service</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Support</a>
-                        <a class="dropdown-item" href="#">Check order</a>
-                        <a class="dropdown-item" href="#">Report</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#c">Kids</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">US</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">About</a>
-                        <a class="dropdown-item" href="#">Aim</a>
-                        <a class="dropdown-item" href="#">History</a>
-                        <a class="dropdown-item" href="#">Contact</a>
-                        <a class="dropdown-item" href="#"><i class="fab fa-facebook"></i></a>
-                        <a class="dropdown-item" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </li>
-
-
             </ul>
-        </div>
-    </div>
-</nav>
-
-<header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">First Slide</h3>
-                    <p class="lead">This is a description for the first slide.</p>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade show active" id="m">
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="../product/001">
+                                <img src="../img/PopularMen.png" class="img-fluid">
+                                <h5>Cotton shirt Regualr Fit</h5>
+                                <p>HKD99</p>
+                                <div class="mx-auto">
+                                    <div class="productFS2-color"></div>
+                                    &nbsp;
+                                    <div class="productFS1-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen2.svg" class="img-fluid">
+                                <h5>Slim Fit Cigarette trouser</h5>
+                                <p>HKD179</p>
+                                <div class="mx-auto">
+                                    <div class="productPD-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen3.svg" class="img-fluid">
+                                <h5>Twill trousers Slim Fit</h5>
+                                <p>HKD139</p>
+                                <div class="mx-auto">
+                                    <div class="productPS-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen4.jpeg" class="img-fluid">
+                                <h5>Short-sleeve shirt Regular Fit</h5>
+                                <p>HKD179</p>
+                                <div class="mx-auto">
+                                    <div class="productDB-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen5.jpeg" class="img-fluid">
+                                <h5>T-shirt with a motif</h5>
+                                <p>HKD79.90</p>
+                                <div class="mx-auto">
+                                    <div class="productLP-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen6.jpeg" class="img-fluid">
+                                <h5>Printed sweatshirt shorts</h5>
+                                <p>HKD229</p>
+                                <div class="mx-auto">
+                                    <div class="productG-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen7.jpeg" class="img-fluid">
+                                <h5>Zip-off joggers</h5>
+                                <p>HKD329</p>
+                                <div class="mx-auto">
+                                    <div class="productFS2-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen8.jpeg" class="img-fluid">
+                                <h5>Patterned resort shirt</h5>
+                                <p>HKD99.90</p>
+                                <div class="mx-auto">
+                                    <div class="productLP-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen9.jpeg" class="img-fluid">
+                                <h5>Relaxed Fit Short-sleeve shirt</h5>
+                                <p>HKD99.90</p>
+                                <div class="mx-auto">
+                                    <div class="productFS2-color"></div>
+                                    &nbsp;
+                                    <div class="productPS-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen10.jpeg" class="img-fluid">
+                                <h5>Relaxed Fit T-shirt</h5>
+                                <p>HKD79.90</p>
+                                <div class="mx-auto">
+                                    <div class="productLightGrey-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen11.jpeg" class="img-fluid">
+                                <h5>Regular Fit Linen-blend shorts</h5>
+                                <p>HKD179</p>
+                                <div class="mx-auto">
+                                    <div class="productLightGrey-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularMen12.jpeg" class="img-fluid">
+                                <h5>COOLMAX® Regular Jeans</h5>
+                                <p>HKD349</p>
+                                <div class="mx-auto">
+                                    <div class="productBlue-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Second Slide</h3>
-                    <p class="lead">This is a description for the second slide.</p>
+                <div class="tab-pane fade" id="f">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
                 </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Third Slide</h3>
-                    <p class="lead">This is a description for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</header>
-
-<!-- Page Content -->
-<section class="py-5">
-    <div class="container">
-        <h1>Latest<br><small>A meadow of wildflowers</small></h1>
-        <p class="lead">This collection is nothing less than a piece of art, signed our printdesigners Abigail, H
-            olly, Kavita and Florentin. The watercolours, the scattered layout, the organic fabrics are all chosen
-            to give you a feeling of reconnecting with nature, no matter where you are.</p>
-        <img src="https://via.placeholder.com/1920x1080" alt="Girl in a jacket" style="max-width:100%">
-        <p><br></p>
-        <h3><i class="fas fa-leaf"></i> Popular</h3>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card bg-secondary" >
-                    <img src="https://via.placeholder.com/1080x1920" class="img-fluid" style="border-radius: 0px" alt="Wearing masks">
-                    <div class="card-body">
-                        <h4 class="card-title">Secondary card title</h4>
-                        <h6 class="card-text">Our staff will seperasdasdasdasdasdasdate allon probabilisdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaty.</h6><a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                <div class="tab-pane fade" id="c">
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids.png" class="img-fluid">
+                                <h5>Denim dungaree dress</h5>
+                                <p>HKD139</p>
+                                <div class="mx-auto">
+                                    <div class="productBlue-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids2.svg" class="img-fluid">
+                                <h5>Patterned poplin dress</h5>
+                                <p>HKD99.90</p>
+                                <div class="mx-auto">
+                                    <div class="productPD-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids3.svg" class="img-fluid">
+                                <h5>3-piece cotton set</h5>
+                                <p>HKD279</p>
+                                <div class="mx-auto">
+                                    <div class="productPS-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids4.jpeg" class="img-fluid">
+                                <h5>Denim dungaree dress</h5>
+                                <p>HKD139</p>
+                                <div class="mx-auto">
+                                    <div class="productDB-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids5.jpeg" class="img-fluid">
+                                <h5>Patterned poplin dress</h5>
+                                <p>HKD99.90</p>
+                                <div class="mx-auto">
+                                    <div class="productPD-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids6.jpeg" class="img-fluid">
+                                <h5>3-piece cotton set</h5>
+                                <p>HKD279</p>
+                                <div class="mx-auto">
+                                    <div class="productPS-color"></div>
+                                    &nbsp;
+                                    <div class="productO-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids7.jpeg" class="img-fluid">
+                                <h5>Gathered-tier dress</h5>
+                                <p>HKD159</p>
+                                <div class="mx-auto">
+                                    <div class="productFS2-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids8.jpeg" class="img-fluid">
+                                <h5>Cotton twill shorts</h5>
+                                <p>HKD79.90</p>
+                                <div class="mx-auto">
+                                    <div class="productLP-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids9.jpeg" class="img-fluid">
+                                <h5>Interactive-motif top</h5>
+                                <p>HKD69.90</p>
+                                <div class="mx-auto">
+                                    <div class="productPS-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids10.jpeg" class="img-fluid">
+                                <h5>Denim jacket</h5>
+                                <p>HKD229</p>
+                                <div class="mx-auto">
+                                    <div class="productBlue-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids11.jpeg" class="img-fluid">
+                                <h5>Cotton dress</h5>
+                                <p>HKD99.90</p>
+                                <div class="mx-auto">
+                                    <div class="productDG-color"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="product" href="#">
+                                <img src="../img/PopularKids12.jpeg" class="img-fluid">
+                                <h5>Printed jersey top</h5>
+                                <p>HKD99.90</p>
+                                <div class="mx-auto">
+                                    <div class="productO-color"></div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card bg-secondary" >
-                    <img src="https://via.placeholder.com/1080x1920" class="img-fluid" style="border-radius: 0px" alt="Wearing masks">
-                    <div class="card-body">
-                        <h4 class="card-title">Secondary card title</h4>
-                        <h6 class="card-text">Our staff will seperasdasdasdasdasdasdate allon probabilisdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaty.</h6><a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
+        </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer class="py-5 container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="order-1 col-md-4">
+                    <a href="#">
+                        <p>About us</p>
+                    </a>
+                    <a href="#">
+                        <p>Our aim</p>
+                    </a>
+                    <a href="#">
+                        <p>Brand history</p>
+                    </a>
+                </div>
+                <div class="order-2 col-md-4">
+                    <a href="#">
+                        <p>Product</p>
+                    </a>
+                    <a href="#">
+                        <p>Male</p>
+                    </a>
+                    <a href="#">
+                        <p>Female</p>
+                    </a>
+                    <a href="#"><p>Children</p></a>
+                </div>
+                <div class="order-3 col-md-4">
+                    <a href="#"><p>Support</p></a>
+                    <a href="#">
+                        <p>Check order</p>
+                    </a>
+                    <a href="#">
+                        <p>Contacts</p>
+                    </a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card bg-secondary" >
-                    <img src="https://via.placeholder.com/1080x1920" class="img-fluid" style="border-radius: 0px" alt="Wearing masks">
-                    <div class="card-body">
-                        <h4 class="card-title">Secondary card title</h4>
-                        <h6 class="card-text">Our staff will seperasdasdasdasdasdasdate allon probabilisdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaty.</h6><a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-            </div>
-
-
-
+            <br>
+            <p>Copyright &copy; nature 2021</p>
         </div>
-    </div>
-</section>
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-
-    <div class="container">
-        <div class="row">
-            <div class="order-1 col-md-4">
-                <a href="#"><p class="text-muted">About us</p></a>
-                <a href="#"><p class="text-muted">Our aim</p></a>
-                <a href="#"><p class="text-muted">Brand history</p></a>
-            </div>
-            <div class="order-2 col-md-4">
-                <a href="#"><p class="text-muted">Product</p></a>
-                <a href="#"><p class="text-muted">Male</p></a>
-                <a href="#"><p class="text-muted">Female</p></a>
-                <a href="#"><p class="text-muted">Children</p></a>
-            </div>
-            <div class="order-2 col-md-4">
-                <a href="#" class="text-muted">Support</p></a>
-                <a href="#"><p class="text-muted">Check order</p></a>
-                <a href="#"><p class="text-muted">Contacts</p></a>
-                <a href="#" class="text-muted"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="text-muted"><i class="fab fa-instagram fa-2x"></i></a>
-            </div>
-        </div>
-        <br>
-        <p class="m-0 text-center text-white">Copyright &copy; nature 2021</p>
-    </div>
-    <!-- /.container -->
-</footer>
-
+        <!-- /.container -->
+    </footer>
+</wrapper>
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
-
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-
 </body>
-
 </html>

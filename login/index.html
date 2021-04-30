@@ -15,6 +15,7 @@
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40754e4154.js" crossorigin="anonymous"></script>
+    <script src="../js/login.js" crossorigin="anonymous"></script>
     <script
             src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -106,14 +107,14 @@
         <form>
             <div class="row">
                 <div class="col-md-12">
-                    <label for="ac" class="form-label">E-mail:</label>
-                    <input type="email" class="form-control" id="ac" aria-describedby="emailHelp">
+                    <label for="se" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="se" aria-describedby="emailHelp">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <label for="pw" class="form-label">Password:</label>
-                    <input type="password" class="form-control" id="pw" aria-describedby="emailHelp">
+                    <label for="sp" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="sp" aria-describedby="emailHelp">
                 </div>
             </div>
             <div class="container">
@@ -121,10 +122,10 @@
                     <div class="buttons">
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group mr-2" role="group" aria-label="First group">
-                                <button type="button" class="btn btn-outline-primary">Register</button>
+                                <input type="submit" class="btn btn-outline-primary" value="Register"></input>
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                <button type="button" class="btn btn-primary">Login</button>
+                                <input type="submit" onclick="login()" class="btn btn-primary" value="Login"></input>
                             </div>
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                 <a href="#"><p>Product</p></a>
                 <a href="#"><p>Male</p></a>
                 <a href="#"><p>Female</p></a>
-                <a href="#"><p">Children</p></a>
+                <a href="#"><p>Children</p></a>
             </div>
             <div class="order-3 col-md-4">
                 <a href="#">Support</p></a>
