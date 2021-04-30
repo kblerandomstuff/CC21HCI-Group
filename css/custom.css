@@ -7,3 +7,20 @@
     -o-background-size: cover;
     background-size: cover;
 }
+footer{
+    background-color: #8D9F93;
+    color: white;
+    text-align: center;
+}
+form>*{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.pull-right {
+    float: right !important;
+
+}
+.pull-right>button{
+    margin-left: 80px !important;
+}
