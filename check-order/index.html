@@ -23,8 +23,9 @@
 </head>
 
 <body>
-
+<wrapper class="d-flex flex-column min-vh-100">
 <!-- Navigation -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
 
@@ -50,7 +51,11 @@
             </ul>
         </div>
         <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
-            <li class="nav-item"><a class="navbar-brand" href="#">Nature</a></li>
+            <li class="nav-item">
+                <a class="navbar-brand" href="#" >
+                    <img class="img-responsive" src="../img/logo.png" alt="" style="max-height: 40px">
+                </a>
+            </li>
             <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -85,51 +90,19 @@
     </div>
 </nav>
 
-<header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">First Slide</h3>
-                    <p class="lead">This is a description for the first slide.</p>
-                </div>
-            </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Second Slide</h3>
-                    <p class="lead">This is a description for the second slide.</p>
-                </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Third Slide</h3>
-                    <p class="lead">This is a description for the third slide.</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</header>
+
 
 <!-- Page Content -->
-<section class="py-5">
+    <main class="container-fluid py-3 flex-fill">
+<section class="py-10">
     <div class="container">
-        <h1>Check order</h1>
+        <br>
+        <br>
+        <div class="jumbotron">
+            <h1 class="display-3">Check order</h1>
+            <p class="lead">Enter your order number and  phone number to check the details and </p>
+        </div>
+        <h1></h1>
         <form>
             <div class="row">
                 <div class="col-md-12">
@@ -157,36 +130,36 @@
         </form>
     </div>
 </section>
+    </main>
 <!-- Footer -->
-<footer class="py-5 bg-dark">
-
+<footer class="py-5 container-fluid">
     <div class="container">
         <div class="row">
             <div class="order-1 col-md-4">
-                <a href="#"><p class="text-muted">About us</p></a>
-                <a href="#"><p class="text-muted">Our aim</p></a>
-                <a href="#"><p class="text-muted">Brand history</p></a>
+                <a href="#"><p>About us</p></a>
+                <a href="#"><p>Our aim</p></a>
+                <a href="#"><p>Brand history</p></a>
             </div>
             <div class="order-2 col-md-4">
-                <a href="#"><p class="text-muted">Product</p></a>
-                <a href="#"><p class="text-muted">Male</p></a>
-                <a href="#"><p class="text-muted">Female</p></a>
-                <a href="#"><p class="text-muted">Children</p></a>
+                <a href="#"><p>Product</p></a>
+                <a href="#"><p>Male</p></a>
+                <a href="#"><p>Female</p></a>
+                <a href="#"><p">Children</p></a>
             </div>
-            <div class="order-2 col-md-4">
-                <a href="#" class="text-muted">Support</p></a>
-                <a href="#"><p class="text-muted">Check order</p></a>
-                <a href="#"><p class="text-muted">Contacts</p></a>
-                <a href="#" class="text-muted"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="text-muted"><i class="fab fa-instagram fa-2x"></i></a>
+            <div class="order-3 col-md-4">
+                <a href="#">Support</p></a>
+                <a href="#"><p>Check order</p></a>
+                <a href="#"><p>Contacts</p></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
         </div>
         <br>
-        <p class="m-0 text-center text-white">Copyright &copy; nature 2021</p>
+        <p>Copyright &copy; nature 2021</p>
     </div>
     <!-- /.container -->
 </footer>
-
+</wrapper>
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 
