@@ -89,6 +89,8 @@
             <p class="lead">You can login to the account you created here or create a new account here that has no real use.</p>
         </div>
         <h1></h1>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="l">
         <form>
             <div class="row">
                 <div class="col-md-12">
@@ -107,7 +109,7 @@
                     <div class="buttons">
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group mr-2" role="group" aria-label="First group">
-                                <input type="submit" class="btn btn-outline-primary" value="Register"></input>
+                                <a class="nav-link" data-toggle="tab" href="#r"><Button class="btn btn-outline-primary">Register</Button></a>
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Second group">
                                 <input type="submit" onclick="login()" class="btn btn-primary" value="Login"></input>
@@ -117,6 +119,43 @@
                 </div>
             </div>
         </form>
+            </div>
+            <div class="tab-pane fade" id="r">
+            <form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="re" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="re" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="rp" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="rp" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="rrp" class="form-label">Re-enter password:</label>
+                        <input type="password" class="form-control" id="rrp" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="pull-right">
+                        <div class="buttons">
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="btn-group mr-2" role="group" aria-label="First group">
+                                    <a class="nav-link" data-toggle="tab" href="#l"><Button class="btn btn-outline-primary" >Back</Button></a>
+                                </div>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <input type="submit" onclick="register()" class="btn btn-primary" value="I agree the Term of Service and register."></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
     </div>
 </section>
     </main>
