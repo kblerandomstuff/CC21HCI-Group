@@ -7,7 +7,7 @@ body{
    
 }
 /*
- <div class="wrapperindex">
+ <div class="navwrapper">
        <nav class="desktop-nav">
            <ul class="menu-items">
                <li>
@@ -16,10 +16,10 @@ body{
                    </a>
                    <ul class="product-items">
                        <li>
-                           <a href="" >Women</a>
+                           <a href="Womenproductlist.html" >Women</a>
                        </li>
                        <li>
-                        <a href="" class="product">Men</a>
+                        <a href="#" class="product">Men</a>
                        </li>
                        <li>
                         <a>Kids</a>
@@ -34,8 +34,8 @@ body{
             </li>
 
             <li>
-                <a href="#" class="active">
-                    Product
+                <a href="index.html" class="active">
+                    Promotion
                 </a>
             </li>
             
@@ -43,7 +43,7 @@ body{
 
         
            <div class="logo">
-               <a href="#" >
+               <a href="index.html" >
                <img src="img/Nature (1).png" alt=""/>
                </a>
            </div>
@@ -83,7 +83,11 @@ body{
        </nav>
    </div>
 */
-.wrapperindex{
+body{
+  font-family: 'Poppins',sans-serif;
+}
+
+.navwrapper{
   padding: 0 100px;
   margin: 0 auto;
 }
@@ -121,7 +125,7 @@ body{
 }
 .desktop-nav .menu-items .product-items{
   list-style: none;
-  left:100px;
+ left: 100px;
   background: #BCA48F;
   position: fixed;
 }
@@ -165,8 +169,8 @@ body{
 .desktop-nav .menu-icon .icon-items{
   list-style: none;
   right: 80px;
-  display: none;
   background: #BCA48F;
+  display: none;
   position: fixed;
 }
 .desktop-nav .menu-icon li:hover >.icon-items{
@@ -176,6 +180,7 @@ body{
   text-decoration: none;
   color: black;
 }
+
 
 
 /*

@@ -6,6 +6,7 @@
 .type{
     display: flex;
     font-family: 'Oswald',sans-serif;
+    margin-left: 100px;
 }
 .type .women{
     font-size: 48px;
@@ -30,7 +31,7 @@
     display: flex;
     color: #BCA48F;
     font-family: 'Oswald',sans-serif;
-    margin-left: 30px;
+    margin-left: 120px;
     margin-bottom: 50px;
     margin-top: 38px;
     font-size: 24px;
@@ -56,6 +57,10 @@
  display: flex;   
  margin-left: 30px;
  flex-wrap: wrap;
+ max-width: 1080px;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
 }
 .productionlist{
     font-family: 'Oswald',sans-serif;
