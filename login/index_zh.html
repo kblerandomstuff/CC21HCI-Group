@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Natural - your no.1 clothing outlet</title>
+
+
+    <!-- Custom styles for this template -->
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40754e4154.js" crossorigin="anonymous"></script>
+    <script src="../js/login.js" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<wrapper class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+
+
+
+            <div class="navbar-collapse collapse nav-content order-2">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">主頁面</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product">產品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart">購物車</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="../uiweb/index_zh.html" >
+                        <img class="img-responsive" src="img/logo.png" alt="" style="max-height: 40px">
+                    </a>
+                </li>
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+            <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
+                <ul class="ml-auto nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login">會員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkorder">訂單</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">關於我們</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about">關於Nature</a>
+                            <a class="dropdown-item" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                            <a class="dropdown-item" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../uiweb/login/index_zh.html">中文</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Page Content -->
+    <main class="container-fluid py-3 flex-fill">
+        <section class="py-10">
+            <div class="container">
+                <br>
+                <br>
+                <div class="jumbotron">
+                    <h1 class="display-3">登入</h1>
+                    <p class="lead">登入或註冊帳戶</p>
+                </div>
+                <h1></h1>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade show active" id="l">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="se" class="form-label">電郵:</label>
+                                    <input type="email" class="form-control" id="se" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="sp" class="form-label">密碼:</label>
+                                    <input type="password" class="form-control" id="sp" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="pull-right">
+                                    <div class="buttons">
+                                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                            <div class="btn-group mr-2" role="group" aria-label="First group">
+                                                <a class="nav-link" data-toggle="tab" href="#r"><Button class="btn btn-outline-primary">註冊</Button></a>
+                                            </div>
+                                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                                <input type="submit" onclick="login()" class="btn btn-primary" value="登入"></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="r">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="re" class="form-label">電郵:</label>
+                                    <input type="email" class="form-control" id="re" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="rp" class="form-label">密碼:</label>
+                                    <input type="password" class="form-control" id="rp" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="rrp" class="form-label">確認密碼:</label>
+                                    <input type="password" class="form-control" id="rrp" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="pull-right">
+                                    <div class="buttons">
+                                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                            <div class="btn-group mr-2" role="group" aria-label="First group">
+                                                <a class="nav-link" data-toggle="tab" href="#l"><Button class="btn btn-outline-primary" >返回</Button></a>
+                                            </div>
+                                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                                <input type="submit" onclick="register()" class="btn btn-primary" value="同意服務條款並註冊"></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="py-5 container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="order-1 col-md-4">
+                    <a href="about"><p>關於我們</p></a>
+                </div>
+                <div class="order-2 col-md-4">
+                    <a href="product"><p>產品</p></a>
+                    <a href="#"><p>女裝</p></a>
+                    <a href="#"><p>男裝</p></a>
+                    <a href="#"><p>童裝</p></a>
+                </div>
+                <div class="order-3 col-md-4">
+                    <a href="checkorder"><p>訂單</p></a>
+                    <a href="https://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            <br>
+            <p>Copyright &copy; nature 2021</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+</wrapper>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
