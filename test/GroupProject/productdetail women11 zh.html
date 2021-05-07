@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>
+            女裝 - Nature
+        </title>
+        <link rel="stylesheet" href="productdetail.css">
+        <link rel="stylesheet" href="navbar+footer.css">
+    </head>
+<body>
+    <div class="navwrapper">
+        <nav class="desktop-nav">
+            <ul class="menu-items">
+                <li>
+                    <a href="#" >
+                        產品
+                    </a>
+                    <ul class="product-items">
+                        <li>
+                            <a href="Womenproductlistzh.html" >女裝</a>
+                        </li>
+                        <li>
+                         <a href="men zh.html" class="product">男裝</a>
+                        </li>
+                        <li>
+                         <a href="kidszh.html">童裝</a>
+                     </li>
+                    </ul>
+                </li>
+ 
+                <li>
+                 <a href="aboutus zh.html" class="active">
+                     關於我們
+                 </a>
+             </li>
+             
+            </ul>
+ 
+         
+            <div class="logo">
+                <a href="indexzh.html" >
+                <img src="img/Nature (1).png" alt=""/>
+                </a>
+            </div>
+ 
+            <ul class="menu-icon">
+            
+             <li>
+                 <a href="login zh.html" class="active">
+                   <img src="img/Account.svg" width="40" height="40">
+                 </a>
+             </li>
+ 
+             <li>
+                 <a href="cart zh.html" class="active">
+                   <img src="img/Cart.svg" width="40" height="40">
+                 </a>
+             </li>
+ 
+             <li>
+                 <a href="#">
+                 <div class="rotation">
+                   <img src="img/setting.svg" width="40" height="40">
+                   </div>
+                 </a>
+                 <ul class="icon-items">
+                     <li>
+                         <a href="productdetail women11.html">英文</a>
+                     </li>
+                     <li>
+                         <a href="productdetail women11 zh.html">中文</a>
+                     </li>
+                 </ul>
+             </li>
+             
+             
+            </ul>
+        </nav>
+   </div> 
+
+
+
+   
+   <div class="backbutton">
+    <a href="Womenproductlistzh.html"><img src="img/Arrow.png" width="25" height="25"></a>
+</div>
+<div class="pslogan">
+    <img src="img/image 33.png" width="1000">
+</div>
+<div class="pdetail">
+    <div class="ppic">
+        <div class="ssc">
+            <div class="mySlides fade">
+                <img src="womenimage/women11.jpg" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="detailimage/womenproduct11_detail1.jpg" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="detailimage/womenproduct11_detail2.jpg" style="width:50%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <div class="pdesc">
+        <div class="ptitle">
+            <h4>吊墜項鍊
+                <br>HKD 79.9
+            </h4>
+        </div>
+        <div class="pcolour">
+            <h6>顏色: </h6>
+            <select name="pcolour" id="pcolour">
+                <option value="White">白色</option>
+                <option value="Yellow">黃色</option>
+            </select>
+        </div>
+        <div class="psize">
+            <h6>尺寸: </h6>
+            <select name="psize" id="psize">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </div>
+        <div class="pquantity">
+            <h6>數量: </h6>
+            <input type="number" id="quantity" name="quantity" min="1">
+        </div>
+        <div class="pbuttons">
+            <div class="pcartbutton">
+                <a href="checkout zh.html"><img src="img/add2cartzh.svg"></a>
+            </div>
+            <div class="ppurchasebutton">
+                <a href="cart zh.html"><img src="img/puchasenowzh.svg"></a>                   
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   <footer>
+    <div class="wrapper">
+      <div class="footer-container">
+
+        <div class="footer-nav">
+          
+          <h3>關於我們</h3>
+        
+          <ul>
+            <li>
+              <a href="aboutus zh.html"><b>歷史</b></a>
+            </li>
+            <li>
+              <a href="aboutus zh.html"><b>目標</b></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>產品</h3>
+          <ul>
+            <li>
+              <a href="Womenproductlistzh.html"><b>女裝</b></a>
+            </li>
+            <li>
+              <a href="men zh.html"><b>男裝</b></a>
+            </li>
+            <li>
+              <a href="kidszh.html"><b>童裝</b></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>聯絡我們</h3>
+
+          <div class="footer-social">
+            <a href="#">
+              <img src="img/IG.svg">
+            </a>
+
+            <a href="#">
+              <img src="img/FB.svg">
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>copyright. &copy; 2021</p>
+    </div>
+  </footer>
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html>

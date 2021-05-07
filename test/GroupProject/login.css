@@ -1,0 +1,79 @@
+body {
+    font-family:'Poppins',sans-serif;
+}
+
+a {
+    color: black;
+}
+
+.login {
+    line-height: 54px;
+    font-size: 24px;
+}
+
+.loginpic {
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+
+.acname {
+    text-align: center;
+}
+
+.pw{
+    text-align: center;
+}
+
+.inputbox {
+    text-align: center;
+}
+
+.loginbuttons {
+    text-align: center;
+}
+
+.login {
+    padding: 10;
+}
+
+.createac {
+    padding: 10;
+}
+
+.sucessfulmsg {
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    padding: 30
+}
+
+.createacform {
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    padding: 30px;
+    border-style: solid;
+    border-color: black;
+    border:2;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33%;
+    margin-top: 30px;
+}
+.btn{
+    background: black;
+    color: white;
+    display: inline-block;
+    width:100px;
+    margin: 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    padding:0px 5px;
+    
+}

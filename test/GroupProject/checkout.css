@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.checkout-continer{
+    margin-left: 33%;
+   max-width: 490px;
+    justify-content: center;
+    align-items: center;
+}
+.long input, .short input{
+  height: 25px;
+}
+.checkout-continer .h2{
+   text-align: center;
+}
+
+.short{
+    display: flex;
+    margin:20px 0;
+    
+}
+.short ul{
+    padding-right:10px;
+}
+.short li{
+    list-style: none;
+}
+
+.long ul{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.long ul{
+    margin: 20px 0;
+}
+.method {
+    max-width: 472.67px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.method img{
+    padding:20px;
+}
+.selection{
+    display: flex;
+    flex-wrap: wrap;
+   margin-bottom: 30px;
+   align-items: end;
+   justify-content: flex-end;
+}
+.selection a{
+    text-decoration: none;
+}
+.btn{
+    padding:10px;
+    width: 177.35px;
+    height:25px ;
+    display: block;
+    border: 1px solid;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+a[id="proceed"]{
+    background: black;
+    color: white;  
+}
+a[id=continue]{
+    background: white;
+    color: black;
+}

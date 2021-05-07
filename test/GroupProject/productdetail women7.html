@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>
+            Women - Nature
+        </title>
+        <link rel="stylesheet" href="productdetail.css">
+        <link rel="stylesheet" href="navbar+footer.css">
+    </head>
+<body>
+    <div class="navwrapper">
+        <nav class="desktop-nav">
+            <ul class="menu-items">
+                <li>
+                    <a href="#" >
+                        Product
+                    </a>
+                    <ul class="product-items">
+                        <li>
+                            <a href="Womenproductlist.html" >Women</a>
+                        </li>
+                        <li>
+                         <a href="men.html" class="product">Men</a>
+                        </li>
+                        <li>
+                         <a href="kids.html">Kids</a>
+                     </li>
+                    </ul>
+                </li>
+ 
+                <li>
+                 <a href="aboutus.html" class="active">
+                     About Us
+                 </a>
+             </li>
+             
+            </ul>
+ 
+         
+            <div class="logo">
+                <a href="index.html" >
+                <img src="img/Nature (1).png" alt=""/>
+                </a>
+            </div>
+ 
+            <ul class="menu-icon">
+            
+             <li>
+                 <a href="login.html" class="active">
+                   <img src="img/Account.svg" width="40" height="40">
+                 </a>
+             </li>
+ 
+             <li>
+                 <a href="cart.html" class="active">
+                   <img src="img/Cart.svg" width="40" height="40">
+                 </a>
+             </li>
+ 
+             <li>
+                 <a href="#">
+                 <div class="rotation">
+                   <img src="img/setting.svg" width="40" height="40">
+                   </div>
+                 </a>
+                 <ul class="icon-items">
+                     <li>
+                         <a href="productdetail women7.html">English</a>
+                     </li>
+                     <li>
+                         <a href="productdetail women7 zh.html">Chinese</a>
+                     </li>
+                 </ul>
+             </li>
+             
+             
+            </ul>
+        </nav>
+   </div> 
+
+
+
+   
+   <div class="backbutton">
+    <a href="Womenproductlist.html"><img src="img/Arrow.png" width="25" height="25"></a>
+</div>
+<div class="pslogan">
+    <img src="img/image 33.png" width="1000">
+</div>
+<div class="pdetail">
+    <div class="ppic">
+        <div class="ssc">
+            <div class="mySlides fade">
+                <img src="womenimage/women7.jpg" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="detailimage/womenproduct7_detail1.jpg" style="width:50%">
+            </div>
+            <div class="mySlides fade">
+                <img src="detailimage/womenproduct7_detail2.jpg" style="width:50%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <div class="pdesc">
+        <div class="ptitle">
+            <h4>Cotton Shirt Regular Fit
+                <br>HKD 99
+            </h4>
+        </div>
+        <div class="pcolour">
+            <h6>Colour: </h6>
+            <select name="pcolour" id="pcolour">
+                <option value="White">White</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </div>
+        <div class="psize">
+            <h6>Size: </h6>
+            <select name="psize" id="psize">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </div>
+        <div class="pquantity">
+            <h6>Quantity: </h6>
+            <input type="number" id="quantity" name="quantity" min="1">
+        </div>
+        <div class="pbuttons">
+            <div class="pcartbutton">
+                <a href="checkout.html"><img src="img/add2cart.png"></a>
+            </div>
+            <div class="ppurchasebutton">
+                <a href="cart.html"><img src="img/purchasenow.png"></a>                   
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   <footer>
+    <div class="wrapper">
+      <div class="footer-container">
+
+        <div class="footer-nav">
+          
+          <h3>About Us</h3>
+        
+          <ul>
+            <li>
+              <a href="aboutus.html"><b>History</b></a>
+            </li>
+            <li>
+              <a href="aboutus.html"><b>Aims</b></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Product</h3>
+          <ul>
+            <li>
+              <a href="Womenproductlist.html"><b>Women</b></a>
+            </li>
+            <li>
+              <a href="men.html"><b>Men</b></a>
+            </li>
+            <li>
+              <a href="kids.html"><b>Kids</b></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Get Social</h3>
+
+          <div class="footer-social">
+            <a href="#">
+              <img src="img/IG.svg">
+            </a>
+
+            <a href="#">
+              <img src="img/FB.svg">
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>copyright. &copy; 2021</p>
+    </div>
+  </footer>
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html>

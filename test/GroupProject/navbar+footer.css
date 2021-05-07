@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+   
+}
+/*
+ <div class="navwrapper">
+       <nav class="desktop-nav">
+           <ul class="menu-items">
+               <li>
+                   <a href="#" >
+                       Product
+                   </a>
+                   <ul class="product-items">
+                       <li>
+                           <a href="Womenproductlist.html" >Women</a>
+                       </li>
+                       <li>
+                        <a href="#" class="product">Men</a>
+                       </li>
+                       <li>
+                        <a>Kids</a>
+                    </li>
+                   </ul>
+               </li>
+
+               <li>
+                <a href="#" class="active">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html" class="active">
+                    Promotion
+                </a>
+            </li>
+            
+           </ul>
+
+        
+           <div class="logo">
+               <a href="index.html" >
+               <img src="img/Nature (1).png" alt=""/>
+               </a>
+           </div>
+
+           <ul class="menu-icon">
+           
+            <li>
+                <a href="#" class="active">
+                  <img src="img/Account.svg" width="40" height="40">
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="active">
+                  <img src="img/Cart.svg" width="40" height="40">
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                <div class="rotation">
+                  <img src="img/setting.svg" width="40" height="40">
+                  </div>
+                </a>
+                <ul class="icon-items">
+                    <li>
+                        <a href="homepage.html">English</a>
+                    </li>
+                    <li>
+                        <a href="homepagezh.html">Chinese</a>
+                    </li>
+                </ul>
+            </li>
+            
+            
+           </ul>
+       </nav>
+   </div>
+*/
+body{
+  font-family: 'Poppins',sans-serif;
+}
+
+.navwrapper{
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.desktop-nav{
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.desktop-nav .menu-items{
+  list-style: none;
+  display: flex;
+}
+.desktop-nav .menu-items li{
+  margin: 62px 26px 0;
+}
+.desktop-nav .menu-items li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  position: relative;
+}
+.desktop-nav .menu-items li a.active::after{
+  content:'';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: #BCA48F;
+  left: 0;
+  bottom: -14px;
+}
+.desktop-nav .menu-items li a.active:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+.desktop-nav .menu-items .product-items{
+  list-style: none;
+ left: 100px;
+  background: #BCA48F;
+  position: fixed;
+}
+.desktop-nav .menu-items .product-items{
+ display: none;
+}
+.desktop-nav .menu-items li:hover >.product-items{
+  display: block;
+}
+
+.desktop-nav .menu-icon{
+  list-style: none;
+  display: flex;
+}
+.desktop-nav .menu-icon li{
+  margin: 54px 26px 0;
+}
+.desktop-nav .menu-icon li a{
+  position: relative;
+}
+.desktop-nav .menu-icon li a.active::after{
+  content:'';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: #BCA48F;
+  left: 0;
+  bottom: -14px;
+}
+.desktop-nav .menu-icon li a.active:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+.desktop-nav .menu-icon .rotation{
+  
+  -webkit-transition: -webkit-transform 1s;
+}
+.desktop-nav .menu-icon .rotation:hover{
+  -webkit-transform: rotate(90deg) translateZ(0);
+}
+.desktop-nav .menu-icon .icon-items{
+  list-style: none;
+  right: 80px;
+  background: #BCA48F;
+  display: none;
+  position: fixed;
+}
+.desktop-nav .menu-icon li:hover >.icon-items{
+  display: block;
+}
+.desktop-nav .menu-icon li a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/*
+ <footer>
+    <div class="wrapper">
+      <div class="footer-container">
+
+        <div class="footer-nav">
+          <h3>About Us</h3>
+          <ul>
+            <li>
+              <a hef="#"><b>History</b></a>
+            </li>
+            <li>
+              <a hef="#"><b>Aims</b></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Product</h3>
+          <ul>
+            <li>
+              <a href="Womenproductlist.html"><b>Women</b></a>
+            </li>
+            <li>
+              <a href="#"><b>Men</b></a>
+            </li>
+            <li>
+              <a href="#"><b>Kids</b></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h3>Get Social</h3>
+
+          <div class="footer-social">
+            <a href="#">
+              <img src="img/IG.svg">
+            </a>
+
+            <a href="#">
+              <img src="img/FB.svg">
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>copyright. &copy; 2021</p>
+    </div>
+  </footer>
+*/
+footer{
+    background: #8D9F93;
+    font-family: 'Oswald',sans-serif;
+    color: #24342D;
+    margin-top:147px ;
+    padding-bottom: 30px;
+    
+}
+footer a{
+    color: #24342D;
+    text-decoration: none;
+}
+
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+    padding:50px 142px 12px 118px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-container ul{
+    margin-top: 35px;
+    padding: 0;
+    list-style: none;
+}
+.footer-container ul li{
+    margin: 35px 0;
+    font-size: 24px;
+}
+.footer-container .footer-social{
+    margin: 35px 0 24px 0;
+}
+.footer-container .footer-social a{
+    text-decoration: none;
+    margin-left:36px;
+}
+.footer-container .footer-social a:first-child{
+    margin-left: 0;
+}
+
+.footer-container .footer-social a img{
+    transition:500ms;
+}
+
+.footer-container .footer-social a img:hover{
+    transform: scale(1.2);
+}
+.copyright{
+    text-align:center;
+}

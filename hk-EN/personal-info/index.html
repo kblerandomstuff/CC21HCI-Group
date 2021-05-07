@@ -100,43 +100,43 @@
         <form>
             <div class="row">
                     <div class="order-1 col-sm-6">
-                        <label for="exampleInputEmail1" class="form-label">First name:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="sn" class="form-label">First name:</label>
+                        <input type="email" class="form-control" id="sn">
                     </div>
                 <div class="order-2 col-sm-6">
-                    <label for="exampleInputEmail1" class="form-label">Last name:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="n" class="form-label">Last name:</label>
+                    <input type="email" class="form-control" id="n">
                 </div>
             </div>
             <div class="col--12">
-                <label for="exampleInputEmail1" class="form-label">Address line 1:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="ad1" class="form-label">Address line 1:</label>
+                <input type="email" class="form-control" id="ad1">
             </div>
             <div class="col--12">
-                <label for="exampleInputEmail1" class="form-label">Address line 2:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="ad2" class="form-label">Address line 2:</label>
+                <input type="email" class="form-control" id="ad2">
             </div>
             <div class="col--12">
-                <label for="exampleInputEmail1" class="form-label">Address line 3:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="ad3" class="form-label">Address line 3:</label>
+                <input type="email" class="form-control" id="ad3">
             </div>
             <div class="row">
                 <div class="order-1 col-sm-6">
-                    <label for="exampleInputEmail1" class="form-label">City:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="cty" class="form-label">City:</label>
+                    <input type="email" class="form-control" id="cty">
                 </div>
                 <div class="order-2 col-sm-6">
-                    <label for="exampleInputEmail1" class="form-label">Country:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="c" class="form-label">Country:</label>
+                    <input type="email" class="form-control" id="c">
                 </div>
             </div>
             <div class="col--12">
-                <label for="exampleInputEmail1" class="form-label">Contact Number:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="pn" class="form-label">Contact Number:</label>
+                <input type="email" class="form-control" id="pn">
             </div>
 
             <div class="form-group">
-                <label for="exampleInputEmail1" class="form-label">Payment method:</label>
+                <label class="form-label">Payment method:</label>
                 <select class="custom-select">
                     <option selected="">Open this select menu</option>
                     <option value="1">Visa</option>
@@ -150,10 +150,10 @@
                     <div class="buttons">
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group mr-2" role="group" aria-label="First group">
-                                <button type="button" onclick='javascript:history.back();return false;' class="btn btn-outline-primary">Back</button>
+                                <a onclick='javascript:history.back();return false;'><button type="button"  class="btn btn-outline-primary">Back</button></a>
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                <button type="button" class="btn btn-primary">Proceed</button>
+                                <button type="button" class="btn btn-primary" onclick="location.href = '../paymentgy';">Proceed</button>
                             </div>
                         </div>
                     </div>

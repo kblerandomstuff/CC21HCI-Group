@@ -1,0 +1,140 @@
+.cart-container{
+    margin-left:100px ;
+    margin-right: 100px;
+}
+.cart-container .cart{
+    display: flex;
+    margin: 30px 0 40px;
+}
+
+.cart-container .cart h2{
+    padding-top: 7px;
+    font-size: 24px;
+    
+}
+
+.product-container{
+    display: flex;
+   padding-bottom: 30px;
+   flex-wrap: wrap;
+}
+.product-container img{
+    max-width: 217.7px;
+    max-height: 326px;
+}
+.product-detail .productname{
+    padding-left: 40px;
+    font-size: 24px;
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+}
+.product-information{
+    list-style: none;
+    display: flex;   
+    flex-wrap: wrap;
+}
+.product-information li{
+    padding: 40px 40px 0px 40px;
+    justify-content: end;
+}
+.product-information li:nth-last-child(1){
+    font-size: 24px;
+    font-family: 'Oswald',sans-serif;
+    justify-content: end;
+    padding-top:30px;
+    padding-left: 200px;
+    font-weight: bold;
+}
+.product-information .color{
+    display: flex;
+}
+.product-information .color .color-type{
+    margin-left: 10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3px;
+}
+div[id="white"]{
+    background-color:#BD0015;
+    border-color: black;
+}
+div[id="black"]{
+    background-color:black;
+}
+
+hr{
+    border: 1px solid  #BCA48F;
+    margin-bottom: 0px;
+    background: #BCA48F;
+}
+.sub-total{
+   display: flex;
+   align-items: end;
+   justify-content: flex-end;
+}
+.sub-total p{
+    padding-top: 10px;
+    padding:10px 5px 40px; 
+    font-weight: bold;
+}
+.sub-total .price{
+    font-family: 'Oswald',sans-serif;
+    font-size: 24px;
+    padding: 0px;
+}
+.total-container{
+   margin-left: 100px;
+   margin-right: 100px;
+   width: 1000px;
+   max-height: 205px;
+    background: #BCA48F;
+    padding: 26px 31px 0px 31px;
+    
+}
+
+.total-bill{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.total-bill p:nth-last-child(1){
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+}
+.total-bill .bill{
+    font-size: 24px;
+    font-family: 'Oswald',sans-serif;
+}
+.selection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+   justify-content: flex-end;
+   margin-right: 100px;
+   margin-bottom: 30px;
+}
+.selection a{
+    text-decoration: none;
+}
+.btn{
+    padding:10px;
+    width: 177.35px;
+    height:25px ;
+    display: block;
+    border: 1px solid;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+a[id="proceed"]{
+    background: black;
+    color: white;  
+}
+a[id=continue]{
+    background: white;
+    color: black;
+}
+
